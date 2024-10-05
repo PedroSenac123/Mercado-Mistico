@@ -1,0 +1,46 @@
+<!-- <div class="productCart" id="div-product1">
+    <img src="/Front-End/assets/dragonEGG.png" alt="Produto 1">
+    <div class="productName">MistyBox Magic Dragon Eggs premium</div>
+    <div>
+        <p class="productPrice">R$ 6.830,00</p>
+        <input type="number" class="product-qtde-input" id="product-qtde-input-1" value="1" min="1" max="20">
+        <span><i class="fas fa-trash-alt" id="lixeira" onclick="clearProduct1()"></i></span>
+    </div>
+</div> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="/Front-End/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="header-tittle" onclick="redirecionarParaPagina('Mercado-mistico.html')">MistyBox</h1>
+    </header>
+    
+    <section>
+        <h1 id="tittle-cart">Carrinho de Compras</h1>
+        <div class="container" id="cart-container">
+            <div id="productItem">
+                <div class="grid-container" id="cart-items">
+                    <!-- Produtos serão inseridos dinamicamente aqui -->
+                </div>
+            </div>
+
+            <div id="totalContainer">
+                <p>Total: R$ <span id="totalAmount">0,00</span></p>
+            </div>
+
+            <div>
+                <button class="clear-cart-button" onclick="clearCart()"><i class="fas fa-trash-alt"></i> Limpar Carrinho</button>
+                <button class="checkout-button" onclick="redirecionarParaPagina('checkout.html')"><i class="fas fa-shopping-cart"></i> Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/Back-end/src/carrinho.js"></script>
+</body>
+</html>

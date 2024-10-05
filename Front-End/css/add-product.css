@@ -1,0 +1,56 @@
+/* style-add-product.css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #121212;
+    color: #7723FF;
+    text-align: center;
+    padding: 1rem;
+}
+
+#header-title {
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+label {
+    margin: 0.5rem 0;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 0.5rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

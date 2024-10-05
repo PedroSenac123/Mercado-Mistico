@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MistyBox</title>
+    <link rel="stylesheet" href="/Front-End/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>MistyBox</h1>
+            <form id="login-form" action="/usuario/login" method="POST">
+                <input type="text" id="email" placeholder="Email" name="email" required>
+                <input type="password" id="password" placeholder="Senha" name="password" required>
+                <button type="submit" class="confirm-btn">Confirmar</button>
+            </form>
+        </div>
+    </div>
+    <script src="/Back-End/src/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    width: 98.75;
+    height: 16.67vh;
+    background-color: #121212;
+    z-index: 2;
+    display: flex;
+}
+#header-tittle{
+    color: #7723FF;
+    font-size: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16.67vh;
+    z-index: 2;
+    margin-left: 38vw;
+}
+.header img{
+    align-items: center;
+    justify-content: end;
+    width: 5vw;
+    margin-top: 2vh;
+    height: 66%;
+    margin-left: 33vw;
+}
+#first-section{
+    width: 98.75;
+    height: 102vh;
+    background-color: #0F001E;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div-first-section{
+    width: 76.77vw;
+    height: 85.48vh;
+}
+#h1-first-section{
+    font-size: 15vh;
+    color: #7723FF;
+}
+#link-oq-fazemos{
+    color:  #FFFFFF;
+    font-size: 3vh;
+    margin-left: 25vw;
+    margin-top: 8vh;
+    text-decoration: underline;
+}
+
+#second-section{
+    width: 98.75;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+}
+#left-div{
+    padding-top: 20vh;
+    height: 80vh;
+    width: 49vw;
+    position: left;
+}
+#right-div{
+    padding-top: 20vh;
+    height: 80vh;
+    width: 49vw;
+    position: right;
+}
+#our-occupation{
+    color: #7723FF;
+    font-size: 7vh;
+    text-align: center;
+}
+#our-mission{
+    color: #7723FF;
+    font-size: 7vh;
+    text-align: center;
+    margin-top: 4vh;
+}
+#text-about-our-occupation{
+    height: 20.93vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 3vh;
+}
+#text-about-our-mission{
+    height: 20.93vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 3vh;
+}
+#third-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120vh;
+    margin: 0;
+    background-color: #6100FF;
+}
+#h1-third-section{
+    color: white;
+    font-size: 6vh;
+    text-align: center;
+    padding-top: 15vh;
+    margin-bottom: 10vh;
+}
+.image-container {
+    width: 83.07vw;
+    height: 55.09vh;
+    display: flex;
+    gap: 20px;
+    border: 10px solid white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.image-container img {
+    width: 25%; 
+    height: 80%;
+}
+.image-container img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 23.52vh;
+    width: 98.75vw;
+    color: white;
+    /* font-size: 10px; */
+}
+.p{
+    font-size: 2.4vh;
+    margin-top: 2vh;
+}
+.button-container {
+    margin-top: 20px; /* Espaçamento entre as imagens e o botão */
+}
+.button-container a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; /* Suaviza a transição de cor */
+}
+.button-container a:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MistyBox - Produtos</title>
+    <link rel="stylesheet" href="/Front-End/css/style2.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="header-tittle">MistyBox</h1>
+        <img src="/Front-End/assets/add_17216594.png" alt="Adicionar" id="add-img" onclick="redirecionarParaPagina('add-product.html')">
+        <img src="/Front-End/assets/cart.webp" alt="Carrinho" onclick="openPageCart()">
+    </header>
+
+    <div class="grid-container" id="product-list">
+        <!-- Produtos serão inseridos aqui dinamicamente -->
+    </div>
+
+
+    <div id="editProductModal" class="modal">
+        <div class="modal-content">
+          <span class="close" id="closeEditModal">&times;</span>
+          <h2>Editar Produto</h2>
+          
+          <form id="editProductForm">
+            <div class="modal-field">
+              <label for="editProductName">Nome do Produto:</label>
+              <input type="text" id="editProductName" name="productName" required>
+            </div>
+            
+            <div class="modal-field">
+              <label for="editProductPrice">Preço:</label>
+              <input type="text" id="editProductPrice" name="price" required>
+            </div>
+      
+            <div class="modal-field">
+              <label for="editProductAmount">Quantidade:</label>
+              <input type="number" id="editProductAmount" name="amount" required>
+            </div>
+      
+            <div class="modal-field">
+              <label for="editProductImageLink">Link da Imagem:</label>
+              <input type="text" id="editProductImageLink" name="imageLink" required>
+            </div>
+      
+            <div class="modal-field">
+              <label for="editProductDescription">Descrição:</label>
+              <textarea id="editProductDescription" name="description" required></textarea>
+            </div>
+      
+            <div class="modal-actions">
+              <button type="submit" class="btn-save" onclick="submitEditForm(productId)">Salvar Alterações</button>
+              <button id="deleteProductButton" onclick="deletarProduto(event, productId)" style="background-color: red; color: white;">Deletar</button>
+            </div>
+          </form>
+        </div>
+    </div>
+  
+
+
+    <footer>
+        <div id="footer">
+            <p class="p">Nenhuma pessoa ou companhia será permitida inspecionar nossa empresa sem supervisão dos donos.</p>
+            <p class="p">Contato: mistyboxcompany@gmail.com</p>
+            <p class="p">@Todos os Direitos Reservados CyberFunTech</p>
+        </div>
+    </footer>
+
+    <script src="/Back-end/src/script.js"></script>
+    <script src="/Back-end/src/produtos.js"></script>
+</body>
+</html>

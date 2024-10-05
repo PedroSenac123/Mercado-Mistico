@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a; /* Fundo escuro */
+    font-family: Arial, sans-serif;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+}
+
+.login-box {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.login-btn, .register-btn {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.login-btn {
+    background-color: #8A2BE2; /* Cor roxa */
+}
+
+.register-btn {
+    background-color: #000; /* Cor preta */
+}
+
+p {
+    margin: 10px 0;
+    color: #000;
+}

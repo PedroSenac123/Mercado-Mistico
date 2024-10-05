@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.header{
+    width: 98.75;
+    height: 16.67vh;
+    background-color: #121212;
+    z-index: 2;
+    display: flex;
+}
+#header-tittle{
+    color: #7723FF;
+    font-size: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16.67vh;
+    z-index: 2;
+    margin-left: 38vw;
+}
+.header img{
+    align-items: center;
+    justify-content: end;
+    width: 5vw; 
+    margin-top: 2vh;
+    height: 66%;
+}
+#add-img{
+    margin-left: 27vw;
+    margin-right: 2vw;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2vw; 
+    padding: 2vw;
+}
+.product {
+    background-color: white;
+    border: 0.1vw solid #ddd;
+    border-radius: 1vh;
+    overflow: hidden;
+    text-align: center;
+    padding: 1vh;
+    transition: transform 0.3s ease; 
+}
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+.product img {
+    max-width: 100%;
+    border-bottom: 0.1vw solid #ddd;
+    margin-bottom: 1vh;
+}
+.product-name {
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 1vh 0;
+}
+.product-price {
+    font-size: 1.8vh;
+    color: #007BFF;
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 23.52vh;
+    width: 98.75vw;
+    color: white;
+}
+.p{
+    font-size: 2.4vh;
+    margin-top: 2vh;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 9% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+}
+
+.modal-field {
+    margin-bottom: 15px;
+}
+
+.modal-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-field input,
+.modal-field textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-actions {
+    text-align: right;
+}
+
+.btn-save {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #45a049;
+}
+#deleteProductButton {
+    background-color: #f44336; /* Vermelho */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Dá uma pequena margem para separar do botão de salvar */
+}
+
+#deleteProductButton:hover {
+    background-color: #d32f2f; /* Vermelho mais escuro no hover */
+}

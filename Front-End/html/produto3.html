@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MistyBox Classic</title>
+    <link rel="stylesheet" href="/Front-End/css/style-product3.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="header-tittle" onclick="redirecionarParaPagina('Mercado místico.html')">MistyBox</h1>
+        <img src="/Front-End/assets/cart.webp" alt=""  onclick="openPageCart()">
+    </header>
+    
+    <section id="section-product-page">
+        <div class="img-product-page">
+            <img src="/Front-End/assets/magic-swords.png" alt="Produto 1">
+        </div>
+        <div>
+            <h2 id="new-product3">MistyBox Legendary Swords</h2>
+            <p>The enchanted swords were built with extraterrestrial raw materials and molded with a design made by our workers inspired by the legends of the Middle Ages. There are 3 items in one: the golden sword that can cut through any material with ease, the magma sword that has chemical components similar to fire and the demon eye sword that has magical properties.</p>
+        </div>
+        <div class="side-div-buy">
+            <h2 id="price-product3">Preço: 20.400,00</h2>
+            <h2 id="status-storage">Em estoque</h2>
+            <h2 id="compra-internacional">Compra internacional</h2>
+            <div class="button-container">
+                <button class="button button-1" onclick="adicionarProduto3()">Adicionar ao Carrinho</button>
+                <button class="button button-2" onclick="BuyNow3()">Comprar Agora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Produto adicionado ao carrinho. O que você deseja fazer?</p>
+            <button onclick="continuarNavegando()">Continuar Navegando</button>
+            <button onclick="openPageCart()">Ir para o Carrinho</button>
+        </div>
+    </div>
+    
+
+    <script src="/Back-end/src/script.js"></script>
+    <script src="/Back-end/src/carrinho.js"></script>
+</body>
+</html>

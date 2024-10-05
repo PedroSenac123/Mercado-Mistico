@@ -1,0 +1,52 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Batata</title>
+            <link rel="stylesheet" href="/products/produto9/styles.css">
+            <script src="/products/produto9/script.js" defer></script>
+        </head>
+        <body>
+            <header class="header">
+                <h1 id="header-tittle" onclick="redirecionarParaPagina('Mercado místico.html')">MistyBox</h1>
+                <img src="/Front-End/assets/cart.webp" alt="" onclick="openPageCart()">
+            </header>
+            
+            <section id="section-product-page">
+                <div class="img-product-page">
+                    <img src="https://giassi.vtexassets.com/arquivos/ids/2046592-800-auto?v=638589134048700000&width=800&height=auto&aspect=true" alt="Batata">
+                </div>
+                <div>
+                    <h2 id="new-product">Batata</h2>
+                    <p>pacote de batata qualquer</p>
+                </div>
+                <div class="side-div-buy">
+                    <h2 id="price1">Preço: 50,00</h2>
+                    <h2 id="status-storage">Em estoque</h2>
+                    <h2 id="compra-internacional">Compra internacional</h2>
+                    <div class="button-container">
+                        <button class="button button-1" id="adicionarProduto9" onclick="adicionarProduto9()">Adicionar ao Carrinho</button>
+                        <button class="button button-2" onclick="BuyNow9()">Comprar Agora</button>
+                    </div>
+                </div>
+            </section>
+
+            <h2>Carrinho de Compras</h2>
+            <div id="cart"></div>
+
+            <!-- Modal -->
+            <div id="modal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <p>Produto adicionado ao carrinho. O que você deseja fazer?</p>
+                    <button onclick="continuarNavegando()">Continuar Navegando</button>
+                    <button id="adicionar" onclick="openPageCart()">Ir para o Carrinho</button>
+                </div>
+            </div>
+
+            <script src="/Back-End/src/script.js"></script>
+            <script src="/Back-End/src/carrinho.js"></script>
+        </body>
+        </html>
+        

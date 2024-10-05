@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MistyBox Classic</title>
+    <link rel="stylesheet" href="/Front-End/css/style-product2.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="header-tittle" onclick="redirecionarParaPagina('Mercado místico.html')">MistyBox</h1>
+        <img src="/Front-End/assets/cart.webp" alt=""  onclick="openPageCart()">
+    </header>
+    
+    <section id="section-product-page">
+        <div class="img-product-page">
+            <img src="/Front-End/assets/aliensGun.png" alt="Produto 1">
+        </div>
+        <div>
+            <h2 id="new-product2">MistyBox Alien’s Guns</h2>
+            <p>Legalized alien disintegrator gun with a set of 10 goo bullets, medium size and 9mm power. Product not recommended for children under 18 and people with a criminal record. Any violent act committed by the customer is not the responsibility of the company.</p>
+        </div>
+        <div class="side-div-buy">
+            <h2 id="price-product2">Preço: 3.500,00</h2>
+            <h2 id="status-storage">Em estoque</h2>
+            <h2 id="compra-internacional">Compra internacional</h2>
+            <div class="button-container">
+                <button class="button button-1" id="adicionarProduto2" onclick="adicionarProduto2()">Adicionar ao Carrinho</button>
+                <button class="button button-2" onclick="BuyNow2()">Comprar Agora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Produto adicionado ao carrinho. O que você deseja fazer?</p>
+            <button onclick="continuarNavegando()">Continuar Navegando</button>
+            <button onclick="openPageCart()">Ir para o Carrinho</button>
+        </div>
+    </div>
+    
+
+    <script src="/Back-end/src/script.js"></script>
+    <script src="/Back-end/src/carrinho.js"></script>
+</body>
+</html>

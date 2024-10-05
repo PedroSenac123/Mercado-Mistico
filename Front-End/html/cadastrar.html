@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - MistyBox</title>
+    <link rel="stylesheet" href="/Front-End/css/cadastrar.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>MistyBox</h1>
+            <form id="userForm">
+                <input type="text" id="user_name" placeholder="Nome" name="user_name" required>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="password" id="password" placeholder="Senha" name="password" required>
+                <input type="text" id="cpf" placeholder="CPF" name="cpf" required>
+                <input type="text" id="phone" placeholder="Telefone" name="phone" required>
+                
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="status_user" value="User" checked>
+                        User
+                    </label>
+                    <label>
+                        <input type="radio" name="status_user" value="Admin">
+                        Admin
+                    </label>
+                </div>
+                
+                <button type="submit" class="confirm-btn">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="/Back-End/src/cadastrar.js"></script>
+</body>
+</html>

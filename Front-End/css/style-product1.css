@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 16.67vh;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25vw;
+}
+
+#header-tittle {
+    color: #7723FF;
+    font-size: 10vh;
+    text-align: center;
+}
+
+.header img {
+    width: 5vw;
+    height: auto;
+    cursor: pointer;
+}
+
+#section-product-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2vh 3vw;
+    height: 83.33vh;
+}
+
+.img-product-page img {
+    width: 20vw;
+    height: auto;
+    background-color: #f0f0f0; /* fundo cinza para a imagem */
+    border: 1px solid #ccc; /* borda cinza clara */
+}
+
+.product-description {
+    flex-grow: 1;
+    padding-left: 2vw;
+    color: #000;
+}
+
+.side-div-buy {
+    background-color: #4E00FF; /* Ajuste de cor conforme imagem */
+    height: auto;
+    width: 25vw;
+    padding: 2vw;
+    border-radius: 1.5vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.favorite-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2vh;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #FFA800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-1 {
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-1:hover {
+    background-color: #333333;
+}
+
+#price1 {
+    font-size: 3vh;
+}
+
+#status-storage {
+    font-size: 2.5vh;
+    color: #00FF0A;
+}
+
+#compra-internacional {
+    background-color: #0025A7;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.quantity-container {
+    margin-top: 2vh;
+    font-size: 2vh;
+}
+
+.quantity-container label {
+    margin-right: 1vw;
+}
+
+.quantity-container input {
+    width: 4vw;
+    padding: 0.5vh;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-2 {
+    background-color: #00FF0A;
+}
+
+.button-2:hover {
+    background-color: #07a30c;
+}
+
+.button-3 {
+    background-color: #FF0000;
+}
+
+.button-3:hover {
+    background-color: #cc0000;
+}
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

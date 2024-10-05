@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="/Front-End/css/style-product1.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="header-tittle" onclick="redirecionarParaPagina('mercado-mistico.html')">MistyBox</h1>
+        <img src="/Front-End/assets/cart.webp" alt="Carrinho" onclick="openPageCart()">
+    </header>
+
+    <section id="section-product-page">
+        <div class="img-product-page">
+            <img id="product-image" src="" alt="Imagem do Produto">
+        </div>
+        <div>
+            <h2 id="product-name">Nome do Produto</h2>
+            <p id="product-description">Descrição do produto...</p>
+        </div>
+        <div class="side-div-buy">
+            <h2 id="product-price">Preço: R$ 0,00</h2>
+            <h2 id="product-status">Em estoque</h2>
+            <h2 id="compra-internacional">Compra internacional</h2>
+            <div class="button-container">
+                <button class="button button-1" id="add-to-cart-button" onclick="adicionarAoCarrinho('${product.id_products}')">Adicionar ao Carrinho</button>
+                <button id="buyNowButton">Comprar Agora</button>
+            </div>
+        </div>
+         <!-- modal -->
+        <div id="purchaseModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Descrição da compra:</h2>
+                <p id="productDescription"></p>
+                <p>Valor total: <span id="productPrice"></span></p>
+                <label for="paymentMethod">Forma de pagamento:</label>
+                <select id="paymentMethod">
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                </select>
+                <br><br>
+                <label>Parcelamento:</label>
+                <button id="installmentsYes">Sim</button>
+                <button id="installmentsNo">Não</button>
+                <br><br>
+                <button id="finalizePurchase">Finalizar compra</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="/Back-end/src/product.js"></script>
+    <script src="/Back-end/src/script.js"></script>
+    <script src="/Back-end/src/carrinho.js"></script>
+</body>
+</html>
